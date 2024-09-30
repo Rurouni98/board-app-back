@@ -163,5 +163,6 @@ public class BoardServiceImpl implements BoardService {
         return boardRepository.findById(boardDto.getId()).orElseThrow(
                 () -> new RuntimeException("board not exist")
         ).toDto();
+
     }
 }
